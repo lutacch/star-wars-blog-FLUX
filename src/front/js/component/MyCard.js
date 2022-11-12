@@ -1,5 +1,6 @@
-import React, {useContext, useEffect} from "react";
+import React, {useContext} from "react";
 import { Context } from "../store/appContext";
+
 
 
 
@@ -8,9 +9,12 @@ const MyCard = (props) => {
 
     const { store, actions } = useContext(Context);
 
+    
+
 
 
     return (
+        
   
 
   <div className="container">
@@ -30,6 +34,7 @@ const MyCard = (props) => {
                 <p className="card-text text-white">{props.name}</p>
             </div>      
         </div>
+        <button>hola</button>
         </div>
 
        
