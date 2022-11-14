@@ -18,12 +18,16 @@ export const Home = () => {
 						name={item.name}
 						height={item.height}
 						id={index+1}/>
+					
 						</div>
 					)
 				})}		
 			</div>
+		
+		
+		
 
-			<DetailCard/>
+	
 
 			</div>
 	);
