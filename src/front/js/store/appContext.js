@@ -24,6 +24,7 @@ const injectContext = PassedComponent => {
 		
 			state.actions.fetchCharacter();
 			state.actions.setFavorites()
+			state.actions.removeFavorites();
 		
 		}, []);
 
