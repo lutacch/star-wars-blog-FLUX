@@ -11,8 +11,8 @@ const DetailCardCharacter = (props) => {
   
     return (
 
-        <div className="card bg-white">
-         	<img className="card-img-top"  src={`https://starwars-visualguide.com/assets/img/characters/${numero + 1 }.jpg`}></img> 
+        <div className="card bg-white" >
+         	<img className="card-img-top"  src={`https://starwars-visualguide.com/assets/img/characters/${numero + 1 }.jpg`} style={{ width: "20%" }} ></img> 
           <h1>{store.characters[parametro.index].name}</h1>  	
           <h2>{store.characters[parametro.index].height}</h2> 
           <h2>{store.characters[parametro.index].hair_color}</h2> 

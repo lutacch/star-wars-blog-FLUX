@@ -26,7 +26,8 @@ const MyCard = (props) => {
             <div className="card-body bg-black"  style={{ width: "100%" }}>
                 <p className="card-text text-white">{props.name}</p>
                 <p><Link to={`/detail-card-character/${index}`} className="btn btn-warning">ver mas</Link></p>
-                <button className="btn btn-primary">♡</button>
+                {store.favorites.includes(props.name) ? null : (<button className="btn btn-primary" onClick={() => actions.setFavorites(props.name)}>♥</button>)}
+           
                 
             </div>      
         </div>
