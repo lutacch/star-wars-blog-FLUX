@@ -1,15 +1,18 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			characters :[]
+			characters :[],
+		
 		
 		},
 		actions: {
 
 			fetchCharacter: () => {
-				fetch("https://swapi.dev/api/people")
+				fetch("https://swapi.py4e.com/api/people")
 				.then((response)=> response.json())
-				.then((data) => setStore({characters: data.results}))}
+				.then((data) => setStore({characters: data.results}))},
+
+		
 			
 		}
 	};

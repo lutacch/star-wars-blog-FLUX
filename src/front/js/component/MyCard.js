@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 const MyCard = (props) => {
 
     const { store, actions } = useContext(Context);
+    let index = props.index;
 
     
 
@@ -33,7 +34,7 @@ const MyCard = (props) => {
             
             <div className="card-body bg-black"  style={{ width: "100%" }}>
                 <p className="card-text text-white">{props.name}</p>
-                <p><Link to="/detail-card" className="btn btn-warning">Mas informacion</Link></p>
+                <p><Link to={`/detail-card-character/${index}`} className="btn btn-warning">ver mas</Link></p>
                 <button className="btn btn-primary">♡</button>
                 
             </div>      

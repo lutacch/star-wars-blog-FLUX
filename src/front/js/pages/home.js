@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from "react";
 import { Context } from "../store/appContext";
 import "../../styles/home.css";
 import MyCard from "../component/MyCard";
-import DetailCard from "/workspace/star-wars-blog-FLUX/src/front/js/component/DetailCard.js";
+
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
@@ -17,7 +17,9 @@ export const Home = () => {
 						className="row"
 						name={item.name}
 						height={item.height}
-						id={index+1}/>
+						id={index+1}
+						index={index}
+						/>
 					
 						</div>
 					)
