@@ -21,16 +21,7 @@ const MyCard = (props) => {
 
   <div className="container justify-content-center">
           <div className="card " >
-          <img
-            className="card-img-top"
-            src={
-              "https://starwars-visualguide.com/assets/img/characters/" +
-              props.id +
-              ".jpg"
-            }
-            alt="Card image cap"
-            style={{ width: "100%" }}
-          ></img>
+          <img className="card-img-top"  src={`https://starwars-visualguide.com/assets/img/characters/${props.uid}.jpg`} alt={props.name}/>
             
             <div className="card-body bg-black"  style={{ width: "100%" }}>
                 <p className="card-text text-white">{props.name}</p>

@@ -17,7 +17,7 @@ export const Home = () => {
 						className="row"
 						name={item.name}
 						height={item.height}
-						id={index+1}
+						uid={index+1}
 						index={index}
 						/>
 					
