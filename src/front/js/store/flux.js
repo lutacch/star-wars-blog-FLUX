@@ -3,8 +3,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			characters :[],
 			favorites: [],
-		
-		
+	
 		},
 		actions: {
 
@@ -21,10 +20,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			removeFavorites: (item) => {
 				const store = getStore();
 				setStore({ favorites: store.favorites.filter(favorito => favorito !== item) });
-			},
-
-		
-			
+			},	
 		}
 	};
 };

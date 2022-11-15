@@ -20,17 +20,9 @@ export const Home = () => {
 						uid={index+1}
 						index={index}
 						/>
-					
 						</div>
-					)
-				})}		
+				)})}		
 			</div>
-		
-		
-		
-
-	
-
 			</div>
 	);
 };
