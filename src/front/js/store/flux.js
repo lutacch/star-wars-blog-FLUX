@@ -3,6 +3,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			characters :[],
 			favorites: [],
+			planets: [],
 	
 		},
 		actions: {
@@ -21,6 +22,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const store = getStore();
 				setStore({ favorites: store.favorites.filter(favorito => favorito !== item) });
 			},	
+
+			fetchPlanets: () => {
+				fetch("https://swapi.py4e.com/api/planets")
+				.then((response)=> response.json())
+				.then((data) => setStore({planets: data.results}))},
 		}
 	};
 };

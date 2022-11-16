@@ -21,8 +21,9 @@ const injectContext = PassedComponent => {
 		useEffect(() => {
 		
 			state.actions.fetchCharacter();
-			state.actions.setFavorites()
+			state.actions.setFavorites();
 			state.actions.removeFavorites();
+			state.actions.fetchPlanets();
 		
 		}, []);
 

@@ -4,6 +4,7 @@ import { Home } from "./pages/home";
 import injectContext from "./store/appContext";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import DetailCardPlanet from "./component/DetailCardPlanet";
 
 import DetailCardCharacter from "./component/DetailCardCharacter";
 
@@ -16,7 +17,8 @@ const Layout = () => {
                     <Navbar />
                     <Routes>
                        <Route element={<Home />} path="/" /> 
-                        <Route path="/detail-card-character/:index" element={<DetailCardCharacter/>}   />
+                        <Route path="/detail-card-character/:index" element={<DetailCardCharacter/>}/>
+                        <Route path="/detail-card-planets/:index" element={<DetailCardPlanet/>}   />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     <Footer />   

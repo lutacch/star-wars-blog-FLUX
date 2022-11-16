@@ -21,7 +21,7 @@ body {
 }
 .carta-detalle{
   /*   border: 1px solid yellow; */
-    width: 100%;
+    width: 80%;
     display:flex;
     flex-direction: row;
 
