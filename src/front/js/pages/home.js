@@ -8,7 +8,7 @@ export const Home = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
-		<div>
+		<div><h1 className="container text-warning">CHARACTERS</h1>
 			<div className="container card-group">
 				{store.characters.map((item, index)=>{
 					return (
@@ -26,3 +26,6 @@ export const Home = () => {
 			</div>
 	);
 };
+
+
+
