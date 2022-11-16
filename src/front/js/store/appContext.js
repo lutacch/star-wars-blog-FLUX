@@ -24,6 +24,7 @@ const injectContext = PassedComponent => {
 			state.actions.setFavorites();
 			state.actions.removeFavorites();
 			state.actions.fetchPlanets();
+			state.actions.fetchSpecies();
 		
 		}, []);
 
