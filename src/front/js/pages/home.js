@@ -9,7 +9,7 @@ export const Home = () => {
 
 	return (
 		<div>
-			<div className="card-group">
+			<div className="container card-group">
 				{store.characters.map((item, index)=>{
 					return (
 						<div key={index}> 
